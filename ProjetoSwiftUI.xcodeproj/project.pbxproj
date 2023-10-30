@@ -14,6 +14,7 @@
 		ACD7F1832AEFE7B600C87476 /* ProjetoSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD7F1822AEFE7B600C87476 /* ProjetoSwiftUITests.swift */; };
 		ACD7F18D2AEFE7B600C87476 /* ProjetoSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD7F18C2AEFE7B600C87476 /* ProjetoSwiftUIUITests.swift */; };
 		ACD7F18F2AEFE7B600C87476 /* ProjetoSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD7F18E2AEFE7B600C87476 /* ProjetoSwiftUIUITestsLaunchTests.swift */; };
+		ACD7F1AE2AEFF6F500C87476 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD7F1AD2AEFF6F500C87476 /* ExploreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		ACD7F1882AEFE7B600C87476 /* ProjetoSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjetoSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD7F18C2AEFE7B600C87476 /* ProjetoSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoSwiftUIUITests.swift; sourceTree = "<group>"; };
 		ACD7F18E2AEFE7B600C87476 /* ProjetoSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ACD7F1AD2AEFF6F500C87476 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,11 @@
 		ACD7F16F2AEFE7B400C87476 /* ProjetoSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				ACD7F1A12AEFF5C900C87476 /* App */,
+				ACD7F1A22AEFF5D200C87476 /* Core */,
+				ACD7F1A32AEFF5DD00C87476 /* Extensions */,
+				ACD7F1A42AEFF5E200C87476 /* Models */,
+				ACD7F1A52AEFF61E00C87476 /* Utils */,
 				ACD7F1702AEFE7B400C87476 /* ProjetoSwiftUIApp.swift */,
 				ACD7F1722AEFE7B400C87476 /* ContentView.swift */,
 				ACD7F1742AEFE7B600C87476 /* Assets.xcassets */,
@@ -127,6 +134,98 @@
 				ACD7F18E2AEFE7B600C87476 /* ProjetoSwiftUIUITestsLaunchTests.swift */,
 			);
 			path = ProjetoSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		ACD7F1A12AEFF5C900C87476 /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		ACD7F1A22AEFF5D200C87476 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				ACD7F1A62AEFF63500C87476 /* Explore */,
+				ACD7F1A72AEFF64600C87476 /* Listings */,
+				ACD7F1A82AEFF65C00C87476 /* MapView */,
+				ACD7F1A92AEFF66B00C87476 /* Profile */,
+				ACD7F1AA2AEFF67400C87476 /* Root */,
+				ACD7F1AB2AEFF67A00C87476 /* Tabbar */,
+				ACD7F1AC2AEFF68600C87476 /* Wishlists */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		ACD7F1A32AEFF5DD00C87476 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ACD7F1A42AEFF5E200C87476 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ACD7F1A52AEFF61E00C87476 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		ACD7F1A62AEFF63500C87476 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				ACD7F1AD2AEFF6F500C87476 /* ExploreView.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		ACD7F1A72AEFF64600C87476 /* Listings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Listings;
+			sourceTree = "<group>";
+		};
+		ACD7F1A82AEFF65C00C87476 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		ACD7F1A92AEFF66B00C87476 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		ACD7F1AA2AEFF67400C87476 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		ACD7F1AB2AEFF67A00C87476 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		ACD7F1AC2AEFF68600C87476 /* Wishlists */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wishlists;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACD7F1732AEFE7B400C87476 /* ContentView.swift in Sources */,
+				ACD7F1AE2AEFF6F500C87476 /* ExploreView.swift in Sources */,
 				ACD7F1712AEFE7B400C87476 /* ProjetoSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
