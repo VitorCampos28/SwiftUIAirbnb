@@ -15,6 +15,7 @@
 		ACD7F18D2AEFE7B600C87476 /* ProjetoSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD7F18C2AEFE7B600C87476 /* ProjetoSwiftUIUITests.swift */; };
 		ACD7F18F2AEFE7B600C87476 /* ProjetoSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD7F18E2AEFE7B600C87476 /* ProjetoSwiftUIUITestsLaunchTests.swift */; };
 		ACD7F1AE2AEFF6F500C87476 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD7F1AD2AEFF6F500C87476 /* ExploreView.swift */; };
+		ACD7F1B22AEFFA6800C87476 /* ListingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD7F1B12AEFFA6800C87476 /* ListingItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		ACD7F18C2AEFE7B600C87476 /* ProjetoSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoSwiftUIUITests.swift; sourceTree = "<group>"; };
 		ACD7F18E2AEFE7B600C87476 /* ProjetoSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		ACD7F1AD2AEFF6F500C87476 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		ACD7F1B12AEFFA6800C87476 /* ListingItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 		ACD7F1A72AEFF64600C87476 /* Listings */ = {
 			isa = PBXGroup;
 			children = (
+				ACD7F1B12AEFFA6800C87476 /* ListingItemView.swift */,
 			);
 			path = Listings;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACD7F1B22AEFFA6800C87476 /* ListingItemView.swift in Sources */,
 				ACD7F1732AEFE7B400C87476 /* ContentView.swift in Sources */,
 				ACD7F1AE2AEFF6F500C87476 /* ExploreView.swift in Sources */,
 				ACD7F1712AEFE7B400C87476 /* ProjetoSwiftUIApp.swift in Sources */,
