@@ -8,27 +8,14 @@
 import SwiftUI
 
 struct ListingItemView: View {
-    
-    var images = [
-        "listing-1",
-        "listing-2",
-        "listing-3",
-        "listing-4",
-    ]
+
     
     var body: some View {
         VStack(spacing: 8, content: {
             // Images
-            TabView {
-                ForEach(images, id: \.self) { image in
-                    Image(image)
-                        .resizable()
-                        .scaledToFill()
-                }
-            }
-            .frame(height: 320)
-            .clipShape(RoundedRectangle(cornerRadius: 10))
-            .tabViewStyle(.page)
+            ListingImageCarouselView()
+                .frame(height: 320)
+                .clipShape(RoundedRectangle(cornerRadius: 10))
             // listing details
             
             HStack(alignment: .top, content: {
@@ -36,6 +23,7 @@ struct ListingItemView: View {
                 VStack(alignment: .leading, content: {
                     Text("Miami, Florida")
                         .fontWeight(.semibold)
+                        .foregroundStyle(.black)
                     
                     Text("12 mi away")
                         .foregroundStyle(.gray)
@@ -46,19 +34,17 @@ struct ListingItemView: View {
                     HStack(spacing: 4, content: {
                         Text("$567")
                             .fontWeight(.semibold)
+                            .foregroundStyle(.black)
                         
                         Text("Night")
+                            .foregroundStyle(.black)
                     })
                 })
                 
                 Spacer()
                 
-                HStack(spacing: 2, content: {
-                    Image(systemName: "star.fill")
-                    
-                    Text("4.86")
-                })
-                // rating
+                RatingView(withReviews: false)
+                    .foregroundStyle(.black)
             })
             .font(.footnote)
             
