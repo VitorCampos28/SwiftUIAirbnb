@@ -13,9 +13,7 @@ struct ExploreView: View {
             ScrollView {
                 LazyVStack(spacing: 32, content: {
                     ForEach(1...10, id: \.self) { count in
-                        Rectangle()
-                            .frame(height: 400)
-                            .clipShape(RoundedRectangle(cornerRadius: 10))
+                        ListingItemView()
                     }
                 })
             }
