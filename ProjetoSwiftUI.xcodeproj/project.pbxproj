@@ -16,6 +16,7 @@
 		ACD7F18F2AEFE7B600C87476 /* ProjetoSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD7F18E2AEFE7B600C87476 /* ProjetoSwiftUIUITestsLaunchTests.swift */; };
 		ACD7F1AE2AEFF6F500C87476 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD7F1AD2AEFF6F500C87476 /* ExploreView.swift */; };
 		ACD7F1B22AEFFA6800C87476 /* ListingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD7F1B12AEFFA6800C87476 /* ListingItemView.swift */; };
+		ACD7F1B52AF0144B00C87476 /* SearchAndFilterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD7F1B42AF0144B00C87476 /* SearchAndFilterBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		ACD7F18E2AEFE7B600C87476 /* ProjetoSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		ACD7F1AD2AEFF6F500C87476 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		ACD7F1B12AEFFA6800C87476 /* ListingItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingItemView.swift; sourceTree = "<group>"; };
+		ACD7F1B42AF0144B00C87476 /* SearchAndFilterBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAndFilterBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				ACD7F1AD2AEFF6F500C87476 /* ExploreView.swift */,
+				ACD7F1B42AF0144B00C87476 /* SearchAndFilterBar.swift */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				ACD7F1732AEFE7B400C87476 /* ContentView.swift in Sources */,
 				ACD7F1AE2AEFF6F500C87476 /* ExploreView.swift in Sources */,
 				ACD7F1712AEFE7B400C87476 /* ProjetoSwiftUIApp.swift in Sources */,
+				ACD7F1B52AF0144B00C87476 /* SearchAndFilterBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
