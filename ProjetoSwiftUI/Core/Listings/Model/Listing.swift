@@ -16,6 +16,7 @@ struct Listing: Identifiable, Codable, Hashable {
     let numbersOfBethrooms: Int
     let numbersOfguests: Int
     let numbersOfBeds: Int
+    let numberOfNights: Int
     var pricePerNight: Int
     let latitude: Double
     let longitude: Double
@@ -39,7 +40,7 @@ enum ListingFeatures: Int, Codable, Identifiable, Hashable {
         case .selfCheckIn:
             return "door.left.hand.open"
         case .superHost:
-            return "Superhost"
+            return "medal"
         }
     }
     
