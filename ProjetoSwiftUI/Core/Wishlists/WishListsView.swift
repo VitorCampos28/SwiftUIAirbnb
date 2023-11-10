@@ -17,16 +17,16 @@ struct WishListsView: View {
                         .font(.headline)
                     Text("Your can create, view or edit wishlists once you've logged in")
                         .font(.footnote)
+                    
                 })
-                
                 LoginButton()
                     .modifier(LoginButtonViewModifier())
+                Spacer()
             })
-            
-            Spacer()
+            .navigationTitle("Wishlists")
+            .padding()
         }
-        .padding()
-        .navigationTitle("Wishlists")
+        
     }
 }
 

@@ -9,16 +9,13 @@ import SwiftUI
 
 struct RatingView: View {
     var withReviews: Bool
-
-    init(withReviews: Bool) {
-        self.withReviews = withReviews
-    }
+    var rating: Double
 
     var body: some View {
         HStack(spacing: 2, content: {
             Image(systemName: "star.fill")
             
-            Text("4.86")
+            Text("\(rating)")
             
             if withReviews {
                 Text(" - ")
@@ -32,5 +29,5 @@ struct RatingView: View {
 }
 
 #Preview {
-    RatingView(withReviews: true)
+    RatingView(withReviews: true, rating: 4.68)
 }

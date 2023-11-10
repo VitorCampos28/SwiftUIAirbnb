@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ExploreView: View {
     @State private var showDestinationSearchView = false
+    @StateObject var viewModel = ExploreViewModel(service: ExploreService())
     
     var body: some View {
         NavigationStack {
@@ -23,9 +24,9 @@ struct ExploreView: View {
                             }
                         }
                     LazyVStack(spacing: 32, content: {
-                        ForEach(1...10, id: \.self) { item in
+                        ForEach(viewModel.listings) { item in
                             NavigationLink(value: item) {
-                                ListingItemView()
+                                ListingItemView(listing: item)
                                     .frame(height: 400)
                                     .clipShape(RoundedRectangle(cornerRadius: 10))
                             }
@@ -33,8 +34,8 @@ struct ExploreView: View {
                     })
                 }
                 .padding()
-                .navigationDestination(for: Int.self) { listing in
-                    ListingDetailView()
+                .navigationDestination(for: Listing.self) { listing in
+                    ListingDetailView(listing: listing)
                         .navigationBarBackButtonHidden()
                 }
             }
