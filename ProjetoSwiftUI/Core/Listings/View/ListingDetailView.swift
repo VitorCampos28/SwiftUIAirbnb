@@ -177,8 +177,8 @@ struct ListingDetailView: View {
                         
                         Text("Total before taxes")
                             .font(.footnote)
-                        let (day, lastDay) = self.getCurrentDay(endDate: listing.numberOfNights)
-                        Text("Oct \(day) - \(lastDay)")
+                        let (day, lastDay, month) = self.getCurrentDay(endDate: listing.numberOfNights)
+                        Text("\(month) \(day) - \(lastDay)")
                             .font(.footnote)
                             .fontWeight(.semibold)
                             .underline()
@@ -206,15 +206,14 @@ struct ListingDetailView: View {
 }
 
 extension ListingDetailView {
-    func getCurrentDay(endDate: Int) -> (String, String) {
+    func getCurrentDay(endDate: Int) -> (String, String, String) {
         let calendar = Calendar.current
-        let components = calendar.dateComponents([.day], from: Date())
+        let components = calendar.dateComponents([.day, .month], from: Date())
         
-        
-        if let day = components.day {
-            return ("\(day)", "\(day + endDate)")
+        if let day = components.day, let month = MounthLabel(rawValue: components.month ?? 1) {
+            return ("\(day)", "\(day + endDate)", "\(month)")
         }
-        return ("", "")
+        return ("", "", "")
     }
 }
 
