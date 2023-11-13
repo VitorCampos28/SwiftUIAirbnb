@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC4BEB1C2B0290350041653E /* Regions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4BEB1B2B0290350041653E /* Regions.swift */; };
 		ACB83BA72AFE866200CC262D /* MonthCustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB83BA62AFE866200CC262D /* MonthCustomLayout.swift */; };
 		ACBAB1FA2AFABF47003CEA13 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBAB1F92AFABF47003CEA13 /* LoginButton.swift */; };
 		ACBAB1FC2AFAC212003CEA13 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBAB1FB2AFAC212003CEA13 /* MainTabView.swift */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC4BEB1B2B0290350041653E /* Regions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regions.swift; sourceTree = "<group>"; };
 		ACB83BA62AFE866200CC262D /* MonthCustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthCustomLayout.swift; sourceTree = "<group>"; };
 		ACBAB1F92AFABF47003CEA13 /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 		ACBAB1FB2AFAC212003CEA13 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				ACFDB55C2AFAFA54009ED188 /* DeveloperPreview.swift */,
+				AC4BEB1B2B0290350041653E /* Regions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 				ACD7F1732AEFE7B400C87476 /* ContentView.swift in Sources */,
 				ACD648DB2AF0501200DBEB1C /* RatingView.swift in Sources */,
 				ACB83BA72AFE866200CC262D /* MonthCustomLayout.swift in Sources */,
+				AC4BEB1C2B0290350041653E /* Regions.swift in Sources */,
 				ACD7F1AE2AEFF6F500C87476 /* ExploreView.swift in Sources */,
 				ACCAFD1A2AFD857200251A40 /* ExploreService.swift in Sources */,
 				ACFDB55B2AFAE6D2009ED188 /* Listing.swift in Sources */,
